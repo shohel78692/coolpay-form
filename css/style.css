@@ -1,0 +1,174 @@
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ 
+
+body {
+  --primary-color: rgb(12, 58, 210);
+  --border-color: rgb(229, 229, 229);
+
+  color: rgb(36, 49, 98);
+  background-color: rgb(240, 242, 251);
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.container {
+   width: 426px;
+  margin: auto;
+  margin-top: 70px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
+  padding: 32px;
+  background-color: white; 
+}
+
+.logo {
+/*  padding-top: 8px;
+  padding-bottom: 35px;
+    width: 208px;
+    padding-left: 5px;*/
+
+     width: 200px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.payment-method {
+   display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.payment-method label {
+  width: 72px;
+  border: 1.5px solid var(--border-color);
+  border-radius: 4px;
+  transition: border-color 0.1s ease-in;
+}
+
+.payment-method label .val {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 36px;
+  padding: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.payment-method label img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.payment-method label img:hover {
+  border-color: var(--primary-color);
+
+}
+/*.payment-method label input {
+}
+
+.payment-method label input:checked + .val {
+}*/
+
+.custom-radio {
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.custom-radio input {
+}
+
+.custom-radio .lbl {
+  font-size: 17px;
+}
+
+.custom-radio .lbl::before {
+}
+
+.custom-radio .lbl::after {
+}
+
+.custom-radio input:checked + .lbl::before {
+}
+.custom-radio input:checked + .lbl::after {
+}
+
+.field-row {
+  display: flex;
+}
+
+.field-row:last-child {
+}
+
+.field-row .field-gap {
+  padding: 10px 12px 10px 10px;
+}
+
+.field-row .field-wrap {
+  flex: 1;
+  /*width: 40%;*/
+
+}
+
+.field-row .field-wrap .lbl {
+   position: relative;
+  font-size: 13px;
+  bottom: 69%;
+  margin-left: 23px;
+}
+
+.field-row .field-wrap .field {
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  outline: none !important;
+   padding-right: 20px;
+  padding-left: 23px;
+  padding-top: 28px;
+  padding-bottom: 9px;
+}
+
+.field-row .field-wrap .field:focus {
+  border-color: blue;
+}
+
+.field-row .field-wrap .field:focus + .lbl {
+}
+
+.btn {
+    background-color: blue;
+  padding-top: 15px;
+  padding-bottom: 15px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    padding-left: 138px;
+    padding-right: 134px;
+    border-radius: 5px;
+    border: none;
+  cursor: pointer;
+  outline: none;
+  margin-top: 10px;
+}
+ 
+
+.btn:active {
+  
+}
+
+.btn.btn-block {
+}
+
+.btn:hover {
+}
+
+ 

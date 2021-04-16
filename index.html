@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width=1.0">
+  <title>form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="content">
+
+    <form class="container" onsubmit="return false">
+      <img src="img/logo.png" class="logo">
+
+      <div class="payment-method">
+        <label>
+          <!-- <input type="radio" name="payment-method" value="dk" checked> -->
+          <div class="val"><img src="img/d.png"></div>
+        </label>
+
+        <label>
+          <!-- <input type="radio" name="payment-method" value="visa"> -->
+          <div class="val"><img src="img/visa.png"></div>
+        </label>
+
+        <label>
+          <!-- <input type="radio" name="payment-method" value="mastercard"> -->
+          <div class="val"><img src="img/big.png"></div>
+        </label>
+
+        <label>
+          <!-- <input type="radio" name="payment-method" value="paypal"> -->
+          <div class="val"><img src="img/pay.png"></div>
+        </label>
+      </div>
+
+      <div class="field-row">
+        <label class="custom-radio">
+          <input type="radio" checked name="entity" value="private">
+          <span class="lbl">Private</span>
+        </label>  
+
+        <label class="custom-radio">
+          <input type="radio" name="entity" value="business">
+          <span class="lbl">Business</span>
+        </label>
+      </div>
+
+      <div class="field-row">
+        <label class="field-wrap">
+          <input type="text" name="name" class="field" />
+          <span class="lbl">Name</span>
+        </label>
+      </div>
+
+      <div class="field-row">
+        <label class="field-wrap">
+          <input type="text" name="card-number" class="field" />
+          <span class="lbl">Card number</span>
+        </label>
+      </div>
+
+      <div class="field-row">
+        <label class="field-wrap">
+          <input type="text" name="exp" class="field" />
+          <span class="lbl">Expiry date</span>
+        </label>
+        <div class="field-gap"></div>
+        <label class="field-wrap">
+          <input type="text" name="name" class="field" />
+          <span class="lbl">CCV</span>
+        </label>
+      </div>
+
+      <div class="field-row">
+        <input type="submit" class="btn btn-block" value="Pay 100 EUR" />
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
